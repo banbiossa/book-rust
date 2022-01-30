@@ -4,7 +4,6 @@ const MAP_N: usize = 25;
 
 fn main() {
     let mut rng = rand::thread_rng();
-
     let mut maze = [[0; MAP_N]; MAP_N];
     for n in 0..MAP_N {
         maze[n][0] = 1;
@@ -18,7 +17,7 @@ fn main() {
                 continue;
             }
             maze[y][x] = 1;
-            let r = rng.get_range(0..=3);
+            let r = rng.gen_range(0..=3);
             match r {
                 0 => maze[y - 1][x] = 1,
                 1 => maze[y + 1][x] = 1,
