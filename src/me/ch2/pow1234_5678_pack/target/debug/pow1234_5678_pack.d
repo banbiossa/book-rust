@@ -1,0 +1,1 @@
+/Users/shotashimizu/github.com/banbiossa/book-rust/src/me/ch2/pow1234_5678_pack/target/debug/pow1234_5678_pack: /Users/shotashimizu/github.com/banbiossa/book-rust/src/me/ch2/pow1234_5678_pack/src/main.rs
