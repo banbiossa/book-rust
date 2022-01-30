@@ -28,7 +28,7 @@ fn main() {
             }
         }
     }
-    let tiles = ["  ", "##"];
+    let tiles = ["  ", "ZZ"];
     for y in 0..MAP_N {
         for x in 0..MAP_N {
             print!("{}", tiles[maze[y][x]]);
