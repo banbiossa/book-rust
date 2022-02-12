@@ -1,0 +1,11 @@
+[package]
+name = "rpn_calc_by_banbiossa"
+version = "0.1.0"
+edition = "2021"
+authors=["banbiossa"]
+description="RPN (reverse polish notation) library"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
