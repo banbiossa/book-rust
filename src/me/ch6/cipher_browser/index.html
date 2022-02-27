@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<script type="module">
+    import init, { encrypt, decrypt } from "./pkg/cipher_browser.js";
+    init().then(() => {
+        window.encrypt = encrypt;
+        window.decrypt = decrypt;
+    });
+</script>
+<h1>暗号化ツール</h1>
+<div>
+    入力:<br>
+    <textarea id="input" rows="10" cols="50"></textarea>
+    パスワード
+    <input type="password" id="password"><br>
+    <button onclick="enc_click()">暗号化</button>
+    <button onclick="dec_click()">復号化</button>
+    出力<br>
+    <textarea id="output" rows="10" cols="50"></textarea>
+</div>
+
+<script>
+    const q = (query) => {
+        return document.querySelector(query);
+    };
+    function enc_click() {
+        console.log(q("#input"));
+        q("#output").value = encrypt(q("#password").value, q("#input").value);
+    }
+    function dec_click() {
+        q("#output").value = decrypt(q("#password").value, q("#input").value);
+    }
+</script>
+
+</html>
